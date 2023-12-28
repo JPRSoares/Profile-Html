@@ -104,10 +104,12 @@ header {
 }
 
 .skills h2 {
+    font-size: 1.8em;
     grid-column: 1 / -1; 
     text-align: center; 
     margin-top: 20px; 
-    margin-bottom: 20px; /
+    margin-bottom: 20px;
+    border-bottom: 1px groove #4a4949;
 }
 
 .skills {
@@ -117,6 +119,9 @@ header {
     justify-content: center; 
     align-items: center; 
     margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
 }
 
 .icon-container {
