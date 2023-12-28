@@ -103,8 +103,44 @@ header {
     color: #fff;
 }
 
-.summary {
+.skills h2 {
+    grid-column: 1 / -1; /* Spans from the first to the last column */
+    text-align: center; /* Centers the text */
+    margin-top: 20px; /* Adds space above the heading */
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* creates 4 columns of equal width */
+    gap: 10px; /* adjust as needed for space between items */
+    justify-content: center; /* Centers the entire grid horizontally if there's extra space */
+    align-items: center; /* Center items vertically */
     margin-top: 20px;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon-container img {
+    max-width: 100px; /* limits image width to 100px */
+    height: auto; /* maintains the aspect ratio */
+}
+
+.icon-container span {
+    margin-top: 8px; /* Space between icon and text */
+    font-size: 14px; /* Adjust as needed */
+}
+
+@media (max-width: 768px) {
+    .skills {
+        grid-template-columns: repeat(2, 1fr); /* 2 icons per row for smaller screens */
+    }
+    /* Adjust font sizes, padding, or other properties as needed */
 }
 
 @media (max-width: 768px) {
