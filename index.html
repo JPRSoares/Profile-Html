@@ -9,6 +9,9 @@
 
 </head>
 <body>
+    <div id="welcomeScreen" class="welcome-screen">
+        <h1>Welcome! <br> <br> Unfolding the Art of Web Mastery... <br> <br> by João Soares</h1>
+    </div>    
     <div class="container">
         <header>
             <h1>João Pedro R. Soares</h1>
@@ -59,7 +62,7 @@
                </div>
                <div class="icon-container">
                 <img src="https://i.ibb.co/RQ46jmK/spring-logo-removebg-preview.png" alt="Spring">
-                <span>Spring</span>
+                <span>Spring | Spring MVC</span>
                </div>
                <div class="icon-container">
                 <img src="https://i.ibb.co/D5TCzC5/png-transparent-jquery-hd-logo-removebg-preview.png" alt="jQuery">
@@ -73,7 +76,32 @@
                 <img src="https://i.ibb.co/pLbppkW/transferir-removebg-preview.png" alt="Maven">
                 <span>Maven</span>
                </div>
+               <div class="icon-container">
+                <img src="https://i.ibb.co/PQpGnk4/tom-Cat-logo-removebg-preview.png" alt="TomCat">
+                <span>TomCat</span>
+               </div>
+               <div class="icon-container">
+                <img src="https://i.ibb.co/bJWT3zM/computer-icons-representational-state-transfer-application-programming-interface-computer-software-w.png" alt="Rest">
+                <span>REST Api's</span>
+               </div>
+               <div class="icon-container">
+                <img src="https://i.ibb.co/CVqJywm/Git-icon-svg-removebg-preview.png" alt="Git">
+                <span>Git</span>
+               </div>
+               <div class="icon-container">
+                <img src="https://i.ibb.co/zsKFtH3/agile-logo-removebg-preview.png" alt="Agile">
+                <span>Agile Methodology</span>
+               </div>
         </section>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var welcomeScreen = document.getElementById('welcomeScreen');
+            setTimeout(function() {
+                welcomeScreen.style.display = 'none';
+            }, 4000); 
+        });
+    </script>
+    
 </body>
 </html>
